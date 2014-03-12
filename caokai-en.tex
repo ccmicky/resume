@@ -1,0 +1,100 @@
+\documentclass[11pt,a4paper]{moderncv}
+
+% moderncv themes
+%\moderncvtheme[blue, roman]{casual}
+% optional argument are 'blue' (default), 'orange', 'red', 'green', 'grey' and 'roman' (for roman fonts, instead of sans serif fonts)
+\moderncvtheme[blue]{classic}                % idem
+
+\usepackage[utf8]{inputenc}
+
+% adjust the page margins
+\usepackage[scale=0.8]{geometry}
+\recomputelengths                             % required when changes are made to page layout lengths
+
+% personal data
+\firstname{Kai}
+\familyname{Cao}
+\mobile{+86 13818141545}
+\email{ck89119@gmail.com}
+%% \quote{``Do what you fear, and the death of fear is certain.''\\-- Anthony Robbins}
+
+%\phone{(312) 413-8265}                      % optional, remove the line if not wanted
+%\fax{312 996 1491}                          % optional, remove the line if not wanted
+%\photo[64pt]{avatar.jpg}                         % '64pt' is the height the picture must be resized to and 'picture' is the name of the picture file;
+
+\nopagenumbers{}                             % uncomment to suppress automatic page numbering for CVs longer than one page
+
+%% \renewcommand*{\sectionfont}{\LARGE\sffamily\monospace\slshape}
+%% \renewcommand*\addressfont{\fontfamily{pzc}\selectfont}
+%% \renewcommand*\sectionfont{\fontfamily{pzc}\fontsize{20}{24}\selectfont}
+
+\begin{document}
+\maketitle
+
+\section{Education}
+\cventry{2012--Present}{MS in Computer Science, Supervisor: Dawu Gu}{School of Electronic Information and Electrical Engineering, Shanghai Jiaotong University}{expected 2015}{}{}
+\cventry{2008--2012}{BA in Software Engineering}{School of Computer Science and Technology, Soochow University}{}{}{}
+
+%\section{Master thesis}
+%\cvline{title}{\emph{Title}}
+%\cvline{supervisors}{Supervisors}
+%\cvline{description}{\small Short thesis abstract}
+
+\section{Internship}
+\cventry{2011}{Zhongchuang Software Engineering}{}{}{}{}
+
+\section{Community}
+\cventry{GitHub}{\url{github.com/ck89119}}{}{}{}{}
+
+\section{Project Experience}
+%% \subsection{Research Projects}
+
+\cventry{2012--present}
+{LoCCS Power Analysis Platform}
+{JNA, Side Channel Attack}
+{Research Project}{}
+{
+This platform is designed for covering all operations during the side channel attack.
+It is a part of National '973' Project in LoCCS. My job was designing UI of software in Java.
+Also, I was responsible for testing the JNA interface and integrating Java \& C++ code.
+At the same time, I wrote a series of analysis modules of DES algorithm.
+}
+
+\vspace*{0.2\baselineskip}
+\cventry{2011}
+{Zhongchuang HR management system}
+{J2EE}
+{Intern Project}{}
+{
+This project aims developing a human resource management system for Zhongchuang software engineering company. 
+}
+
+\section{Awards}
+\cventry{2012}{Second Grade Scholarship for Graduates of Shanghai Jiaotong University}{}{}{}{}
+\cventry{2010}{Second Place in Programming Competition of Soochow University}{}{}{}{}
+\cventry{2009}{Honor Reward of ACM/ICPC Asian Regional in Wuhan}{}{}{}{}
+\cventry{2009}{First Grade Scholarship of Soochow University}{}{}{}{}
+%\cventry{2009}{Zhu Jingwen Scholarship}{}{}{}{}
+\cventry{2007}{Second Prize in National Olympiad in Informatics in Provinces}{}{}{}{}
+
+\section{Skills}
+\cventry{Languages}{C/C++, Java, Python, C\#, Pascal, Haskell(learning)}{}{}{}{}
+\cventry{OS}{Windows, Linux}{}{}{}{}
+%\cventry{VersionControl}{Git, SVN}{}{}{}{}
+\cventry{DataBase}{SQLServer}{}{}{}{}
+\cventry{English}{CET-6 470}{}{}{}{}
+
+% \closesection{}                   % needed to renewcommands
+% \renewcommand{\listitemsymbol}{-} % change the symbol for lists
+
+%\section{Extra 1}
+%\cvlistitem{Item 1}
+%\cvlistitem{Item 2}
+%\cvlistitem[+]{Item 3}            % optional other symbol
+
+%\section{Extra 2}
+%\cvlistdoubleitem[\Neutral]{Item 1}{Item 4}
+%\cvlistdoubleitem[\Neutral]{Item 2}{Item 5}
+%cvlistdoubleitem[\Neutral]{Item 3}{}
+
+\end{document}
