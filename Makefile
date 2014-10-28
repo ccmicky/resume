@@ -1,12 +1,12 @@
-default: wyx-cn.pdf wyx-en.pdf resume.pdf
+default: caokai-cn.pdf caokai-en.pdf resume.pdf
 
-resume.pdf: wyx-en.pdf
+resume.pdf: caokai-en.pdf
 	cp $^ resume.pdf
 
-wyx-cn.pdf: wyx-cn.tex
+caokai-cn.pdf: caokai-cn.tex
 	xelatex $^
 
-wyx-en.pdf: wyx-en.tex
+caokai-en.pdf: caokai-en.tex
 	xelatex $^
 
 clean:
