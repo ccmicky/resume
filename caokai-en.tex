@@ -3,7 +3,7 @@
 % moderncv themes
 %\moderncvtheme[blue, roman]{casual}
 % optional argument are 'blue' (default), 'orange', 'red', 'green', 'grey' and 'roman' (for roman fonts, instead of sans serif fonts)
-\moderncvtheme[blue]{classic}                % idem
+\moderncvtheme[blue, roman]{classic}                % idem
 
 \usepackage[utf8]{inputenc}
 
@@ -32,7 +32,7 @@
 \maketitle
 
 \section{Education}
-\cventry{2012.9-2015.3}{M.E. in Computer Science}{Shanghai Jiaotong University}{}{}{}
+\cventry{2012.9-2016.3}{M.E. in Computer Science}{Shanghai Jiao Tong University}{}{}{}
 \cventry{2008.9-2012.6}{B.E. in Software Engineering}{Soochow University}{}{}{}
 
 %\section{Master thesis}
@@ -40,11 +40,43 @@
 %\cvline{supervisors}{Supervisors}
 %\cvline{description}{\small Short thesis abstract}
 
-\section{Internship}
+\section{Community}
+\cventry{github}
+{github.com/ck89119}{}{}{}{}
+
+\section{Project Experience}
+\cventry{2015.4-2015.11}
+{Test Suite}
+{Shell, Python}{}
+{CooTek}
+{
+It is a full test suite for CooTek keyboard engine on Linux platform.
+Our engine seperates western languages and Chinese apart in function, so this test suite has two parts as well.
+\newline My contributions in western language(English, French, German and so on, about 11 languages in total) part,
+\newline 1.Wrote scripts to generate correction-test cases from user input data which was collected by my teammate.
+\newline 2.Wrote scripts to generate exact-word-test cases for every unigram/bigram/trigram in our dictionaries.
+\newline 3.Automatized western language test part and integrated it into test suite.
+\newline My contributions in Chinese(Pinyin, Zhuyin, Cangjie, Bihua and Wubi) part,
+\newline 1.Wrote scripts to generate exact-word-test cases for every word in our dictionaries.
+\newline 2.Integrated scripts which were used for testing average rank, first rank percentage and sentence percentage.
+\newline 3.Automatized Chinese test part and integrated it into test suite.
+\newline
+}
+
+\cventry{2015.4-2015.11}
+{Performance Test in an Android app}
+{Java, Android}{}
+{CooTek}
+{
+In order to simulate the real condition, we wrote an Android app for testing. My contributions,
+\newline 1.Wrote a time testing module and a series derivative testing modules.
+\newline
+}
+
 \cventry{2014.7–2014.8}
 {Opcode Counting}
 {Dalvik VM, Android}
-{Intern Project}
+{Intern}
 {Alibaba}
 {
 The purpose of this project was to count the times each opcode is called when an Android app runs. My contributions,
@@ -52,44 +84,54 @@ The purpose of this project was to count the times each opcode is called when an
 \newline 2.Determined the counting timing and the position of counting field.
 \newline 3.Figured out the idea, switching to ALT-mode forcely, to optimize counting process.
 \newline 4.Output the counting result by exploiting USER\_SIGNAL.
+\newline
 }
 
-\section{Project Experience}
-\cventry{2012.9–Present}
+\cventry{2012.9–2015.3}
 {LoCCS Power Analysis Platform}
 {JNA, Side Channel Attack(SCA)}
-{Research Project}{}
+{Research}{}
 {
-This project is a part of National ’973’ Project in Lab of Cryptology and Computer Security (LoCCS). This platform is designed to cover all operations during an SCA. My contributions,
-\newline 1.Design the origin UI of the software and implement it in Java.
-\newline 2.Test JNA and JNI for Java calling C++ libraries.
-\newline 3.Write a series of analytic modules of DES algorithm, e.g. CorrelationAnalysis, KnownKey- Analysis, SecondOrderAnalysis.
+This project was a part of National ’973’ Project in Lab of Cryptology and Computer Security (LoCCS). This platform was designed to cover all operations during an SCA. My contributions,
+\newline 1.Designed the origin UI of the software and implemented it in Java.
+\newline 2.Tested JNA and JNI for Java calling C++ libraries.
+\newline 3.Wrote a series of analytic modules of DES algorithm, e.g. CorrelationAnalysis, KnownKeyAnalysis, SecondOrderAnalysis.
+\newline
 }
 
 \cventry{2011.12–2012.5}
 {Research on constructing a binary tree efficiently}
 {Algorithm}
-{Research Project}{}
+{Research}{}
 {
-This was my graduation project for undergraduate study. The purpose was to find the efficient algorithms that would construct a binary tree from the two kinds of traversal sequence and information of each node. My contributions,
-\newline 1.Found the constructing algorithm from its postorder traversal and the first child of each node.
-\newline 2.Found the constructing algorithm from its postorder traversal and the nextsibling of each node.
+This was my graduation project for undergraduate study. The purpose of this project was to find efficient algorithms that could construct a binary tree from the two kinds of traversal sequence and information of each node. My contributions,
+\newline 1.Found a constructing algorithm from postorder traversal and the first child of each node.
+\newline 2.Found a constructing algorithm from postorder traversal and nextsibling of each node.
 \newline 3.Created random binary trees(about 5000 nodes) for testing.
+\newline
 }
 
-\section{Awards}
-\cventry{2012}{Second Grade Scholarship for Graduates of Shanghai Jiaotong University}{}{}{}{}
-\cventry{2010}{Second Place in Programming Competition of Soochow University}{}{}{}{}
-\cventry{2009}{Honor Reward of ACM/ICPC Asian Regional in Wuhan}{}{}{}{}
-\cventry{2009}{First Grade Scholarship of Soochow University}{}{}{}{}
-\cventry{2009}{Zhu Jingwen Scholarship}{}{}{}{}
-\cventry{2007}{Second Prize in National Olympiad in Informatics in Provinces}{}{}{}{}
+%\section{Awards}
+%\cventry{2012}{Second Grade Scholarship for Graduates of Shanghai Jiaotong University}{}{}{}{}
+%\cventry{2010}{Second Place in Programming Competition of Soochow University}{}{}{}{}
+%\cventry{2009}{Honor Reward of ACM/ICPC Asian Regional in Wuhan}{}{}{}{}
+%\cventry{2009}{First Grade Scholarship of Soochow University}{}{}{}{}
+%\cventry{2009}{Zhu Jingwen Scholarship}{}{}{}{}
+%\cventry{2007}{Second Prize in National Olympiad in Informatics in Provinces}{}{}{}{}
 
 \section{Skills}
-\cvline{}{C/C++(6 years), Java(familiar), Python(familiar), Shell(familiar), Git(familiar), Algorithm(enthusiastic), Linux/Unix/Mac(daily-work), Vimer$\sim$}
+\cvline{Language}{C/C++, Java, Python, Shell, Haskell(little)}
+\cvline{OS}{Windows, Linux, OS X(daily-work)}
+\cvline{Version control}{Git, Svn}
+\cvline{Android}{VM, Java Dev}
+\cvline{Other}{Algorithm/Data Structure(enthusiastic), Vimer$\sim$}
+%\cvline{}{C/C++, Java, Python, Shell, Haskell(little), Git/Svn, Algorithm/Data Structure(enthusiastic), Linux, OS X(daily-work), Vimer$\sim$}
 
-\section{Self-assessment}
-\cvline{}{I have huge passion for coding, math and algorithm, and I believe my programming skills will make our lives better and more convenient in the future. I have a very low laugh-point:) and I can work well under pressure. At the same time, I am a good team player and have great communication skills. I would greatly appreciate the chance to work at your company.}
+%\section{Self-assessment}
+%\cvline{}
+%{
+%I have huge passion for coding, math and algorithm, and I believe my programming skills will make our lives better and more convenient in the future. I have a very low laugh-point:) and I can work well under pressure. At the same time, I am a good team player and have great communication skills. I would greatly appreciate the chance to work at your company.
+%}
 
 %\section{Extra 1}
 %\cvlistitem{Item 1}
