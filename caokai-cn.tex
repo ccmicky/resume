@@ -23,8 +23,7 @@
 % personal data
 \firstname{曹凯}
 \familyname{}
-\title{}               % optional, remove the line if not wanted
-
+%\title{}               % optional, remove the line if not wanted
 \mobile{13818141545}                    % optional, remove the line if not wanted
 \email{ck89119@gmail.com}                      % optional, remove the line if not wanted
 %% \quote{\small{``Do what you fear, and the death of fear is certain.''\\-- Anthony Robbins}}
@@ -35,53 +34,125 @@
 \maketitle
 
 \section{教育}
-\cventry{2012至今}{硕士}{上海交通大学-电子信息与电气工程学院，导师：谷大武}{将于 2015 年毕业}{}{}
+\cventry{2012--2016}{硕士}{上海交通大学-电子信息与电气工程学院，导师：谷大武}{}{}{}
 \cventry{2008--2012}{本科}{苏州大学-计算机科学与技术学院}{}{}{}
 
-\section{实习经历}
-\cventry{2014}{阿里巴巴}{}{}{}{}
-\cventry{2011}{中创软件工程有限公司}{}{}{}{}
+%\section{实习经历}
+%\cventry{2014}{阿里巴巴}{}{}{}{}
+%\cventry{2011}{中创软件工程有限公司}{}{}{}{}
 
 \section{社区}
-\cventry{GitHub}{\url{github.com/ck89119}}{}{}{}{}
+\cventry{GitHub}{github.com/ck89119}{}{}{}{}
 
 \section{项目经历}
-\renewcommand{\baselinestretch}{1.2}
+\cventry{2015}
+{输入法引擎测试套件}
+{Shell, Python}{}
+{触宝}
+{
+这是触宝输入法引擎在Linux平台上的完整测试模块。从功能上，我们的引擎分为西方语言和中文两部分，因此我们的测试也分为两部分。
+\newline 我在西方语言（包括英语，法语，德语等11种语言）方面的工作：
+\newline 1. 编写脚本，从收集的用户数据中生成correction-test测试样例。
+\newline 2. 编写脚本，为我们字典中每个一元对/二元对/三元对生成exact-word-test测试样例。
+\newline 3. 自动化西方语言测试，并将其集成到测试框架中。
+\newline
+\newline 我在中文（包括拼音，注音，仓颉，笔画和五笔）方面的工作：
+\newline 1. 编写脚本，为我们字典中每个一元对/二元对/三元对生成exact-word-test测试样例。
+\newline 2. 将之前留下的平均排名，一选概率等脚本集成进中文测试中。
+\newline 3. 自动化中文测试，并将其集成到测试框架中。
+\newline
+%It is a full test suite for CooTek keyboard engine on Linux platform.
+%Our engine seperates western languages and Chinese apart in function, so this test suite has two parts as well.
+%\newline My contributions in western language(English, French, German and so on, about 11 languages in total) part,
+%\newline 1.Wrote scripts to generate correction-test cases from user input data which was collected by my teammate.
+%\newline 2.Wrote scripts to generate exact-word-test cases for every unigram/bigram/trigram in our dictionaries.
+%\newline 3.Automatized western language test part and integrated it into test suite.
+%\newline My contributions in Chinese(Pinyin, Zhuyin, Cangjie, Bihua and Wubi) part,
+%\newline 1.Wrote scripts to generate exact-word-test cases for every word in our dictionaries.
+%\newline 2.Integrated scripts which were used for testing average rank, first rank percentage and sentence percentage.
+%\newline 3.Automatized Chinese test part and integrated it into test suite.
+%\newline
+}
+
+\cventry{2015}
+{在Android app中增加性能测试功能}
+{Java, Android}{}
+{触宝}
+{
+为了模拟真实的测试环境，我们写了一个app来测试输入法各方面的表现。我的工作：
+\newline 1. 编写测试计时模块及一系列派生的功能测试计时模块。
+\newline 
+%In order to simulate the real condition, we wrote an Android app for testing. My contributions,
+%\newline 1.Wrote a time testing module and a series derivative testing modules.
+%\newline
+}
 
 \cventry{2014}
-{主流跑分App的Opcode统计}
-{Dalvik虚拟机，Android}
-{实习项目}{}
-{在App运行时，对各opcode的调用次数进行统计，并希望根据得到的统计数据，为程序优化提供帮助。整个功能都是我自己的想法，包括统计字段的位置，进行统计累加的时机，模式的切换，统计结果的输出等等。}
+{主流跑分app的opcode统计}
+{Dalvik VM, Android}
+{实习项目}
+{阿里巴巴}
+{
+这个项目的目的是统计一个app运行时它所调用的每一个opcode的调用次数。我的工作：
+\newline 1. 确定统计计数的时间点。
+\newline 2. 通过强制转换到ALT模式来优化计数过程。
+\newline 3. 利用USER\_SIGNAL输出统计结果。
+\newline 
+%The purpose of this project was to count the times each opcode is called when an Android app runs. My contributions,
+%\newline 1.Designed the whole architecture.
+%\newline 2.Determined the counting timing and the position of counting field.
+%\newline 3.Figured out the idea, switching to ALT-mode forcely, to optimize counting process.
+%\newline 4.Output the counting result by exploiting USER\_SIGNAL.
+%\newline
+}
 
-\cventry{2012至今}
+\cventry{2012-2014}
 {LoCCS功耗分析平台}
-{Java与C++的交互，旁路攻击}
+{JNA, 旁路攻击}
 {研究项目}{}
-{国家973项目，旨在提供一个能覆盖旁路攻击所有流程的综合性平台。我主要负责前期Java界面的设计，Java与C++交互行为的研究测试，DES算法相关一系列的攻击模块。}
+{
+这个项目是上海交通大学密码与计算机安全实验室（LoCCS）国家973项目的一部分。这个分析平台能覆盖旁路攻击一整套攻击流程中所有的步骤。我的工作：
+\newline 1. 设计了最初版的UI，并用Java实现。
+\newline 2. 测试JNA和JNI，即测试Java调用C++的可行性。
+\newline 3. 编写的一系列的DES算法分析模块，例如：相关性分析，已知密钥分析，二阶分析。
+\newline 
+%This project was a part of National ’973’ Project in Lab of Cryptology and Computer Security (LoCCS). This platform was designed to cover all operations during an SCA. My contributions,
+%\newline 1.Designed the origin UI of the software and implemented it in Java.
+%\newline 2.Tested JNA and JNI for Java calling C++ libraries.
+%\newline 3.Wrote a series of analytic modules of DES algorithm, e.g. CorrelationAnalysis, KnownKeyAnalysis, SecondOrderAnalysis.
+%\newline
+}
 
-%\vspace*{0.2\baselineskip}
-%\cventry{2011}
-%{中创人事管理系统}
-%{J2EE}
-%{实习项目}{}
-%{旨在为中创公司提供人事管理系统。}
+\cventry{2012.5}
+{高效构造二叉树的研究}
+{算法}
+{研究项目}{}
+{
+这是我的本科毕设项目，毕设的目标是：利用二叉树的两种遍历顺序或者节点信息，高效地还原一整棵二叉树。我的工作：
+\newline 1. 发明一种算法，通过二叉树的后序遍历和每个节点的第一个子节点构造二叉树。
+\newline 2. 发明一种算法，通过二叉树的后序遍历和每个节点的下一个兄弟节点构造二叉树。
+\newline 3. 构造一棵大约5000个节点的随机二叉树用于测试。
+\newline
+%This was my graduation project for undergraduate study. The purpose of this project was to find efficient algorithms that could construct a binary tree from the two kinds of traversal sequence and information of each node. My contributions,
+%\newline 1.Found a constructing algorithm from postorder traversal and the first child of each node.
+%\newline 2.Found a constructing algorithm from postorder traversal and nextsibling of each node.
+%\newline 3.Created random binary trees(about 5000 nodes) for testing.
+%\newline
+}
 
-\renewcommand{\baselinestretch}{1.0}
+%\section{奖项}
+%\cventry{2012}{研究生入学二等奖学金}{}{}{}{}
+%\cventry{2010}{苏州大学程序设计竞赛第二名}{}{}{}{}
+%\cventry{2009}{ACM/ICPC亚洲区武汉赛区Honor Reward}{}{}{}{}
+%\cventry{2009}{苏州大学人民奖学金一等奖，朱敬文奖学金，中创奖学金}{}{}{}{}
+%\cventry{2007}{全国青少年信息学（计算机）奥林匹克分区联赛二等奖}{}{}{}{}
 
-
-\section{奖项}
-\cventry{2012}{研究生入学二等奖学金}{}{}{}{}
-\cventry{2010}{苏州大学程序设计竞赛第二名}{}{}{}{}
-\cventry{2009}{ACM/ICPC亚洲区武汉赛区Honor Reward}{}{}{}{}
-\cventry{2009}{苏州大学人民奖学金一等奖，朱敬文奖学金，中创奖学金}{}{}{}{}
-\cventry{2007}{全国青少年信息学（计算机）奥林匹克分区联赛二等奖}{}{}{}{}
-
-\section{技能}
-\cventry{语言}{C/C++, Java, Python, C\#, Pascal, Haskell(学习中)}{}{}{}{}
-\cventry{操作系统}{Windows, Linux, Mac}{}{}{}{}
-\cventry{其它}{Git, Vim, GDB, Shell}{}{}{}{}
-%\cventry{英语}{CET-6}{}{}{}{}
+\section{Skills}
+\cventry{语言}{C/C++, Java, Python, Shell}{}{}{}{}
+\cventry{操作系统}{Windows, Linux, OS X(日常使用)}{}{}{}{}
+\cventry{版本控制}{Git, Svn}{}{}{}{}
+\cventry{Android}{VM, Java Dev}{}{}{}{}
+\cventry{其它}{算法/数据机构, Vimer$\sim$}{}{}{}{}
 \closesection{}                   % needed to renewcommands
 \renewcommand{\listitemsymbol}{-} % change the symbol for lists
 
