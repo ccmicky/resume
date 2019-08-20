@@ -16,16 +16,16 @@
 % adjust the page margins
 \usepackage[scale=0.8]{geometry}
 \recomputelengths                             % required when changes are made to page layout lengths
-\setmainfont[Mapping=tex-text]{Microsoft YaHei}
-\setsansfont[Mapping=tex-text]{Microsoft YaHei}
+\setmainfont[Mapping=tex-text]{Hiragino Sans GB}
+\setsansfont[Mapping=tex-text]{Hiragino Sans GB}
 \CJKtilde
 
 % personal data
-\firstname{曹凯}
+\firstname{程纯}
 \familyname{}
 %\title{}               % optional, remove the line if not wanted
-\mobile{13818141545}                    % optional, remove the line if not wanted
-\email{ck89119@gmail.com}                      % optional, remove the line if not wanted
+\mobile{15601794167}                    % optional, remove the line if not wanted
+\email{ccmicky89@gmail.com}                      % optional, remove the line if not wanted
 %% \quote{\small{``Do what you fear, and the death of fear is certain.''\\-- Anthony Robbins}}
 
 \nopagenumbers{}
@@ -34,125 +34,173 @@
 \maketitle
 
 \section{教育}
-\cventry{2012--2016}{硕士}{上海交通大学-电子信息与电气工程学院，导师：谷大武}{}{}{}
 \cventry{2008--2012}{本科}{苏州大学-计算机科学与技术学院}{}{}{}
 
-%\section{实习经历}
-%\cventry{2014}{阿里巴巴}{}{}{}{}
-%\cventry{2011}{中创软件工程有限公司}{}{}{}{}
-
-\section{社区}
-\cventry{GitHub}{github.com/ck89119}{}{}{}{}
+\section{工作经历}
+\cventry{2012.7--2013.11}{IBM}{}{}{}{}
+\cventry{2013.12--2015.8}{同程旅游网络科技有限公司}{}{}{}{}
+\cventry{2015.11--2017.7}{纽海信息科技有限公司-1号店}{}{}{}{}
+\cventry{2017.8--至今}{达疆网络科技有限公司-达达}{}{}{}{}
 
 \section{项目经历}
-\cventry{2015}
-{输入法引擎测试套件}
-{Shell, Python}{}
-{触宝}
+\cventry{2018.2-2018.5}
+{工服自动识别系统}
+{Tensorflow, Python}{}
+{达达}
 {
-这是触宝输入法引擎在Linux平台上的完整测试模块。从功能上，我们的引擎分为西方语言和中文两部分，因此我们的测试也分为两部分。
-\newline 我在西方语言（包括英语，法语，德语等11种语言）方面的工作：
-\newline 1. 编写脚本，从收集的用户数据中生成correction-test测试样例。
-\newline 2. 编写脚本，为我们字典中每个一元对/二元对/三元对生成exact-word-test测试样例。
-\newline 3. 自动化西方语言测试，并将其集成到测试框架中。
+背景：为了规范骑士穿工服，引入了自拍上传人工审核机制 ，但是人工审核人力成本高且审核效率低下，所以为了提高审核人员的工作效率，采用机器初审筛选的方式。
 \newline
-\newline 我在中文（包括拼音，注音，仓颉，笔画和五笔）方面的工作：
-\newline 1. 编写脚本，为我们字典中每个一元对/二元对/三元对生成exact-word-test测试样例。
-\newline 2. 将之前留下的平均排名，一选概率等脚本集成进中文测试中。
-\newline 3. 自动化中文测试，并将其集成到测试框架中。
+\newline  我在整理生成训练数据方面的工作：
+\newline 1.为了支持不同logo（京东到家和不同时期的达达）的工服，我对训练数据分类，用可视化程序辅助完成做了多套工服的数据标注和自动xml文件生成。
+\newline 2.由于拍摄的背景，角度，光线，穿戴的遮挡，图案logo的扭曲，我也对不同场景下的数据抽样，生存训练数据。
+\newline 3.自动化西方语言测试，并将其集成到测试框架中。
 \newline
-%It is a full test suite for CooTek keyboard engine on Linux platform.
-%Our engine seperates western languages and Chinese apart in function, so this test suite has two parts as well.
-%\newline My contributions in western language(English, French, German and so on, about 11 languages in total) part,
-%\newline 1.Wrote scripts to generate correction-test cases from user input data which was collected by my teammate.
-%\newline 2.Wrote scripts to generate exact-word-test cases for every unigram/bigram/trigram in our dictionaries.
-%\newline 3.Automatized western language test part and integrated it into test suite.
-%\newline My contributions in Chinese(Pinyin, Zhuyin, Cangjie, Bihua and Wubi) part,
-%\newline 1.Wrote scripts to generate exact-word-test cases for every word in our dictionaries.
-%\newline 2.Integrated scripts which were used for testing average rank, first rank percentage and sentence percentage.
-%\newline 3.Automatized Chinese test part and integrated it into test suite.
-%\newline
-}
-
-\cventry{2015}
-{在Android app中增加性能测试功能}
-{Java, Android}{}
-{触宝}
-{
-为了模拟真实的测试环境，我们写了一个app来测试输入法各方面的表现。我的工作：
-\newline 1. 编写测试计时模块及一系列派生的功能测试计时模块。
-\newline 
-%In order to simulate the real condition, we wrote an Android app for testing. My contributions,
-%\newline 1.Wrote a time testing module and a series derivative testing modules.
-%\newline
-}
-
-\cventry{2014}
-{主流跑分app的opcode统计}
-{Dalvik VM, Android}
-{实习项目}
-{阿里巴巴}
-{
-这个项目的目的是统计一个app运行时它所调用的每一个opcode的调用次数。我的工作：
-\newline 1. 确定统计计数的时间点。
-\newline 2. 通过强制转换到ALT模式来优化计数过程。
-\newline 3. 利用USER\_SIGNAL输出统计结果。
-\newline 
-%The purpose of this project was to count the times each opcode is called when an Android app runs. My contributions,
-%\newline 1.Designed the whole architecture.
-%\newline 2.Determined the counting timing and the position of counting field.
-%\newline 3.Figured out the idea, switching to ALT-mode forcely, to optimize counting process.
-%\newline 4.Output the counting result by exploiting USER\_SIGNAL.
-%\newline
-}
-
-\cventry{2012-2014}
-{LoCCS功耗分析平台}
-{JNA, 旁路攻击}
-{研究项目}{}
-{
-这个项目是上海交通大学密码与计算机安全实验室（LoCCS）国家973项目的一部分。这个分析平台能覆盖旁路攻击一整套攻击流程中所有的步骤。我的工作：
-\newline 1. 设计了最初版的UI，并用Java实现。
-\newline 2. 测试JNA和JNI，即测试Java调用C++的可行性。
-\newline 3. 编写的一系列的DES算法分析模块，例如：相关性分析，已知密钥分析，二阶分析。
-\newline 
-%This project was a part of National ’973’ Project in Lab of Cryptology and Computer Security (LoCCS). This platform was designed to cover all operations during an SCA. My contributions,
-%\newline 1.Designed the origin UI of the software and implemented it in Java.
-%\newline 2.Tested JNA and JNI for Java calling C++ libraries.
-%\newline 3.Wrote a series of analytic modules of DES algorithm, e.g. CorrelationAnalysis, KnownKeyAnalysis, SecondOrderAnalysis.
-%\newline
-}
-
-\cventry{2012.5}
-{高效构造二叉树的研究}
-{算法}
-{研究项目}{}
-{
-这是我的本科毕设项目，毕设的目标是：利用二叉树的两种遍历顺序或者节点信息，高效地还原一整棵二叉树。我的工作：
-\newline 1. 发明一种算法，通过二叉树的后序遍历和每个节点的第一个子节点构造二叉树。
-\newline 2. 发明一种算法，通过二叉树的后序遍历和每个节点的下一个兄弟节点构造二叉树。
-\newline 3. 构造一棵大约5000个节点的随机二叉树用于测试。
+\newline 我在模型生成和线上部署的工作：
+\newline 1.我们采用了基于tensorflow框架下的faster-rcnn模型，使用vgg-16网络结构和预训练好的模型。
+\newline 2.线上cpu线下gpu的tf环境部署，自定义c++ engine库的roi-pool operation的多环境编译和安装。
 \newline
-%This was my graduation project for undergraduate study. The purpose of this project was to find efficient algorithms that could construct a binary tree from the two kinds of traversal sequence and information of each node. My contributions,
-%\newline 1.Found a constructing algorithm from postorder traversal and the first child of each node.
-%\newline 2.Found a constructing algorithm from postorder traversal and nextsibling of each node.
-%\newline 3.Created random binary trees(about 5000 nodes) for testing.
-%\newline
+\newline 取得成果：
+\newline 1.可以对用户上传的照片在当天完成全量的审核结果，现在的机器审核一次通过率为80%。
+\newline 2.在审核量一致情况下，对比直接人工规则抽取照片由人工审核和先由机器审核，人工只审核机器判定为不过的照片，加入机器审核的那一方可以找到的不符合要求的照片是人工规则直接抽取审核的两倍。
+\newline
 }
 
-%\section{奖项}
-%\cventry{2012}{研究生入学二等奖学金}{}{}{}{}
-%\cventry{2010}{苏州大学程序设计竞赛第二名}{}{}{}{}
-%\cventry{2009}{ACM/ICPC亚洲区武汉赛区Honor Reward}{}{}{}{}
-%\cventry{2009}{苏州大学人民奖学金一等奖，朱敬文奖学金，中创奖学金}{}{}{}{}
-%\cventry{2007}{全国青少年信息学（计算机）奥林匹克分区联赛二等奖}{}{}{}{}
+\cventry{2018.4-2018.7}
+{人脸1:1识别，判断是否为本人}
+{Tensorflow, Python}{}
+{达达}
+{
+为了规范达达骑士，减少注册者与实际工作者非同一个人。
+\newline
+\newline 我的工作：
+\newline 1.使用CASIA-web face数据库的10万张人脸图片为训练数据。
+\newline 2.使用facenet 模型的inception-resnet-v1的网络结构和softmax的损失函数训练判别是否为同一个的模型，模型的auc=0.87。
+\newline 取得成果：能有效的初筛出一批有问题的非本人照片，为后期的人工复审提供候选集。
+\newline
+}
+
+\cventry{2017.8-2018.5}
+{接单时间预估}
+{Sklearn, Python}{}
+{达达}
+{
+C端用户下单前后分别给出预计订单被接的时间。
+\newline
+\newline  我在特征工程方面的工作：
+\newline 1.运力和订单空间分布特征通过一层全连接转化成一个特征向量。
+\newline 2.地理位置特征：将历史难送（超时，未接单率高）的地址找出来，将相应地区的geohash id作为one hot特征。
+\newline 3.将除了运力和订单空间分布特征之外，全部采用one-hot编码，通过gdbt做特征组合。
+\newline 4.多分类数据极度不平衡，经过各种平衡采样测试，采用log(counts)的方式，在各个预测区间内的误差和总体误差效果都比较好。
+\newline 
+\newline  我在模型训练方面的工作：
+\newline 1.标注数据通过历史数据将接单时间在0到30分钟内的数据向上取整，大于10分钟的归纳到10分钟内，生成标注数据。
+\newline 2.通过sklearn的logistic regression multi class 完成多分类模型。
+\newline
+\newline  我在分流测试和数据分析方面的工作:
+\newline 1.下单后预计接单时间在前台展示上有倒计时，正计时，和直接给出预计接单时间等不同展示方式，统计不同展示方式下的用户真实等待时长。
+\newline 2.分析预计接单时间偏长偏短对用户下单，取消的影响。
+\newline
+\newline  取得成果：
+\newline  1.全国的绝对误差时长从原来的取区域平均值（5min)下降到（100s）。
+\newline  2.对用户的下单率和取消率在数据分析后感觉用户在dada的c端平台并不明显，没有显著改善。
+\newline
+}
+
+\cventry{2017.11-2018.5}
+{智能地址解析}
+{Python}{}
+{达达}
+{
+在微信公众号端通过给出的地址姓名电话等字符串，自动解析填表。
+\newline  我的工作：
+\newline 1.第一版本通过正则表达式，完成自动解析。
+\newline 2.第二版本尝试LSTM+CRF完成自动解析，正在进行中。
+\newline 
+}
+
+\cventry{2016.3-2017.7}
+{SEM自动化投词}
+{Sklearn，c++ DP, Python，Spark}{}
+{1号店}
+{
+这是通过在自动投词引擎平台对代理投词的历史数据学习后，在一定预算条件下，配合运营目标，按天给出的离线投词引擎。
+\newline  我的工作：
+\newline 1.扩词:通过清洗站内搜索日志，对站内的高频搜索短语整理，补充投词词库，通过百度 扩词工具扩词。
+\newline 2.通过词(短语)one-hot 向量化，将已有订单的词作为学习样本，通过Bayes算法将词 分到与商品相对应的具体类目，配合广告创意的模板套用，提高语意相关性(质量得分) 和投放的预算划分。
+\newline 3.确定词的单次点击竞价cpc:计算每个sem投词的曝光/点击/订单数与cpc(单次点击价 格的)皮尔森相关性系数R(cos值)，根据该系数决定cpc出价。
+\newline 4.预估关键词效果:通过回归模型(svr)对历史曝光点击数据的学习，预测具体日期下， 关键的日曝光量，日点击量，日销售额。
+\newline 5.给出推词方案:通过DP的简单背包算法，在一定预算条件下，最大化某个目标(点击， 曝光，销售额)，给出自动化的出词方案。
+\newline
+}
+
+\cventry{2015.12-2016.7}
+{dis站内广告栏位推荐}
+{Python, Spark}{}
+{1号店}
+{
+通过选人和选品系统，对人群做出划分，选出推荐的候选商品，通过逻辑回归拟合CTR，给特定人群的广告栏位推荐商品。
+\newline  我的工作：
+\newline 1.人群划分:通过用户在指定时间段内的站内行为和该行为所在商品的类目，年龄，消费 水平，地域将用户划分为指定个数的群体。
+\newline 2.人群(request)，商品(response)特征选取，通过GBDT特征交叉，生成学习和预测数据。
+\newline 3.通过sgdLR 训练模型，根据预测结果，取top5推送到广告栏位。
+\newline
+}
+
+\cventry{2016-2017}
+{关键词与商品的相关性计算接口}
+{Word2vec c++ source}{}
+{1号店}
+{
+这个接口给1号店商城商家提供自定义站内关键词，建立关键词竞价体系，提供实时计算关键词与商品相关性计算的接口。
+\newline 1.通过word2vec模型，对分词建立词向量，词向量相加得到短句向量，计算商品与关键 词(句)间的相关性。
+\newline
+}
+
+\cventry{2016-2017}
+{dsp}
+{Python, Spark, Sparkstreaming}{}
+{1号店}
+{
+这个项目的目的是给第三方dsp公司提供基于1号店平台用户购买意图的预测，向dsp接口实时提供用户与商品的mapping关系。
+\newline  我的工作：
+\newline 1.spark-streaming，时间片间隔2min，一个yhd用户访问1号店2min后，根据其浏览行为，向dsp公司接口推送该用户的guid和更新或者建立他的用户意图预测下的10个商品id 的mapping关系。
+\newline 2.给出用户对每个商品意图的打分: 根据用户的站内行为通过分别通过LR+GBDT和FM预测用户对每个商品的购 买意图，然后取top5推送，同时通过 出价上线*意图得分*栏位价格 为该用户对该栏位曝光制定商品的竞价。
+\newline
+}
+
+\cventry{2014-2015}
+{搜索部门}
+{Python, Sql}{}
+{同程旅游}
+{
+这个部门给网站的搜索接口建立搜索索引和优化排序接口。
+\newline 我的工作：
+\newline 1.使用sql和自定义方法在分布式存储的日志上分析各种过滤选项的转化率漏斗，找出转化率瓶颈。
+\newline 2.优化过滤选项的设置和页面布局。
+\newline 3.通过训练LR模型来拟合CTR，同事采用一些人过规则，来优化CTR。
+\newline 4.通过不同优化版本和规则间的分流A,B来分析优化的结果。
+\newline
+}
+
+\cventry{2012-2013}
+{CIOD}
+{Shell, Sql, Aix}{}
+{IBM}
+{
+这个项目主要是负责给东京海上火灾保险公司开发和维护ERP系统的。
+\newline My main duties:
+\newline 1.在AIX操作系统上建立和维护多个测试环境。
+\newline 2.在Jenkins平台上建立一套持续集成的打包发布工具。
+\newline 3.备份，恢复和同步不同环境下的oracle数据库。
+\newline
+}
 
 \section{Skills}
-\cventry{语言}{C/C++, Java, Python, Shell}{}{}{}{}
+\cventry{语言}{C/C++, Scala, Python, Shell}{}{}{}{}
 \cventry{操作系统}{Windows, Linux, OS X(日常使用)}{}{}{}{}
+\cventry{机器学习}{分类, 聚类, deep learning（略懂）}{}{}{}{}
 \cventry{版本控制}{Git, Svn}{}{}{}{}
-\cventry{Android}{VM, Java Dev}{}{}{}{}
-\cventry{其它}{算法/数据机构, Vimer$\sim$}{}{}{}{}
+\cventry{其他}{算法, 数据结构, VIM}{}{}{}{}
 \closesection{}                   % needed to renewcommands
 \renewcommand{\listitemsymbol}{-} % change the symbol for lists
 
